@@ -1,0 +1,22 @@
+{
+  "name": "chatroom-frontend",
+  "homepage": "https://github.com/calebmarkovich/chatroom",
+  "authors": [
+    "Caleb Markovich <calebmarkovich@gmail.com>"
+  ],
+  "description": "Frontend for Socket.io-based Chatroom",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

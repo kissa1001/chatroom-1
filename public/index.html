@@ -1,17 +1,36 @@
 <!doctype html>
-<title>Chatroom</title>
-<meta charset="utf-8">
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- JS -->
-<script src="//code.jquery.com/jquery-2.1.0.js"></script>
-<script src="main.js"></script>
-<script src="/socket.io/socket.io.js"></script>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-<p>Current User:</p>
-<div id="current-user"></div>
-<div>Your screen name:</div>
-<input id="screen-name">
-<div>Enter a message:</div>
-<input id="message" type="text">
-<div id="messages"></div>
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
+        <p>Current User:</p>
+        <div id="current-user"></div>
+        <div>Your screen name:</div>
+        <input id="screen-name">
+        <div>Enter a message:</div>
+        <input id="message" type="text">
+        <div id="messages"></div>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
