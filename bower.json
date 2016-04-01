@@ -1,0 +1,23 @@
+{
+  "name": "chatroom",
+  "description": "Chatroom skeleton app",
+  "main": "",
+  "authors": [
+    "Capi Etheriel <barraponto@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libraries",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "modernizr": "^3.3.1"
+  }
+}
