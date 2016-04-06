@@ -1,19 +1,20 @@
 var io = require('socket.io')();
-var users = {};
+var user = {};
 
 io.on('connection', function(socket){
   console.log('New connection detected.');
   socket.on('join', function(name){
       socket.name = name;
       console.log(name + ' join');
-      users[socket.name] = socket;
-      io.sockets.emit('usernames', Object.keys(users));
+      user[socket.name] = socket;
+      io.sockets.emit('usernames', Object.keys(user));
   });
   socket.on('disconnect', function(){
-  	console.log(socket.name + ' disconnected');
-    delete users[socket.nickname];
-  	io.sockets.emit('usernames', Object.keys(users));
+    console.log(socket.name + ' disconnected');
+    delete user[socket.name];
+    io.sockets.emit('usernames', Object.keys(user));
   });
 });
 
 module.exports = io;
+
